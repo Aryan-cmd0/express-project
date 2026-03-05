@@ -14,3 +14,7 @@ app.get("/user/:name", (req, res) => {
 app.listen(3000, () => {
     console.log("Server running at http://localhost:3000");
 });
+
+app.get("/about",(req,res)=>{
+    res.send("This is my express learning server")
+})
